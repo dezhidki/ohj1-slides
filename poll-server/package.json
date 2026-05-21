@@ -1,0 +1,8 @@
+{
+  "name": "ohj1-poll-server",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "ws": "^8.20.1"
+  }
+}
