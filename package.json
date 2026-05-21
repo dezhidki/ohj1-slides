@@ -6,10 +6,10 @@
     "dev:1": "cd luento1 && ../node_modules/.bin/slidev slides.md --port 3041 --remote",
     "dev:2": "cd luento2 && ../node_modules/.bin/slidev slides.md --port 3042 --remote",
     "dev:3": "cd luento3 && ../node_modules/.bin/slidev slides.md --port 3043 --remote",
-    "build": "node scripts/build-all.mjs",
-    "build:1": "node scripts/build-all.mjs luento1",
-    "build:2": "node scripts/build-all.mjs luento2",
-    "build:3": "node scripts/build-all.mjs luento3"
+    "build": "./build.sh",
+    "build:1": "./build.sh luento1",
+    "build:2": "./build.sh luento2",
+    "build:3": "./build.sh luento3"
   },
   "dependencies": {
     "@slidev/cli": "^52.15.2",

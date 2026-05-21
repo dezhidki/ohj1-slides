@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Build & Push
 
 on:
   push:
@@ -38,27 +38,3 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-  deploy:
-    needs: build-and-push
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to server
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_SSH_KEY }}
-          script: |
-            echo "${{ secrets.GITHUB_TOKEN }}" | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            sudo docker pull ghcr.io/${{ github.repository }}:latest
-            sudo docker rm -f ohj1-slides || true
-            sudo docker run -d \
-              --name ohj1-slides \
-              --restart unless-stopped \
-              -p 127.0.0.1:3040:80 \
-              -e PRESENTER_TOKEN="${{ secrets.PRESENTER_TOKEN }}" \
-              ghcr.io/${{ github.repository }}:latest
-            sudo docker image prune -f
-            echo "✓ Deployed"

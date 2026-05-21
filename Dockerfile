@@ -17,8 +17,8 @@ RUN npm ci
 # .dockerignore excludes node_modules, dist, .git, etc.
 COPY . .
 
-# Build every luento* folder found automatically
-RUN node scripts/build-all.mjs
+# 3. Build every lecture found automatically
+RUN bash build.sh
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Stage 2: Runtime — Caddy + Node poll server
