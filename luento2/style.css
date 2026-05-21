@@ -1,0 +1,28 @@
+/* Global slide utility classes — apply via frontmatter: class: <name> */
+
+/* Shrink content to fit overflow — use when text is too long for one slide */
+.dense .slidev-layout {
+  font-size: 0.85em;
+}
+
+.denser .slidev-layout {
+  font-size: 0.75em;
+}
+
+/* Fine-grained list sizing */
+.dense ul, .dense ol {
+  line-height: 1.4;
+}
+
+.denser ul, .denser ol {
+  line-height: 1.3;
+}
+
+/* Tighter spacing for bullet-heavy slides */
+.compact .slidev-layout h1 {
+  margin-bottom: 0.5em;
+}
+
+.compact .slidev-layout li {
+  margin-bottom: 0.15em;
+}

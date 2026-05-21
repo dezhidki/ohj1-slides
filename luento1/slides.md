@@ -30,8 +30,8 @@ Kurssibyrokratia, ensimmäinen ohjelma
 - Mitä seuraavaksi?
 
 ---
-
 layout: two-cols
+---
 
 # Esitietokysely
 
@@ -41,6 +41,7 @@ layout: two-cols
 
 ::right::
 
+![Esitietokysely QR](/esikysely-qr.png)
 
 ---
 
@@ -109,6 +110,8 @@ layout: two-cols
 - Harjoitustehtävien läpikäyntitilaisuus
 
 ---
+class: dense
+---
 
 # Suoritustavat ja arviointi
 
@@ -126,8 +129,8 @@ layout: two-cols
   - Arvosanaksi tulee 1 (ei tenttiä)
 
 ---
-
 layout: two-cols
+---
 
 # Sallitut ja kielletyt asiat
 
@@ -148,8 +151,9 @@ layout: two-cols
 - (Vilppitapausten käsittely.)
 
 ---
-
 layout: two-cols
+class: denser
+---
 
 # Sallitut ja kielletyt asiat: tekoälyn käytöstä
 
@@ -196,6 +200,8 @@ layout: two-cols
 - Opintojakson laajuus on 6 op ≈ 160 tuntia (1 op ≈ 27 tuntia), kesto 11 viikkoa
 - Suositeltu työmäärä on 14,5 tuntia/viikko:
 
+![Heatmap: opiskelukokemukset ja läpipääsy](/heatmap-kokemukset.png)
+
 ---
 
 # Työmäärästä ja opiskelutavasta
@@ -227,6 +233,16 @@ layout: two-cols
 
 # Työmäärästä ja opiskelutavasta
 
+![Tutkimusteksti: kokemus ja arvosanaodotukset](/tutkimus-kokemus1.png)
+
+> Lakanen, A., & Isomöttönen, V. (2023). CS1: Intrinsic Motivation, Self-Efficacy, and Effort. Informatics in Education, 22(4), 651-670. https://doi.org/10.15388/infedu.2023.26
+
+---
+
+# Työmäärästä ja opiskelutavasta
+
+![Tutkimusteksti: kokemus ei paranna lopullisia arvosanoja](/tutkimus-kokemus2.png)
+
 > Lakanen, A., & Isomöttönen, V. (2023). CS1: Intrinsic Motivation, Self-Efficacy, and Effort. Informatics in Education, 22(4), 651-670. https://doi.org/10.15388/infedu.2023.26
 
 ---
@@ -235,11 +251,7 @@ layout: two-cols
 
 > Lakanen, A., & Isomöttönen, V. (2023). CS1: Intrinsic Motivation, Self-Efficacy, and Effort. Informatics in Education, 22(4), 651-670. https://doi.org/10.15388/infedu.2023.26
 
----
-
-# Työmäärästä ja opiskelutavasta
-
-> Lakanen, A., & Isomöttönen, V. (2023). CS1: Intrinsic Motivation, Self-Efficacy, and Effort. Informatics in Education, 22(4), 651-670. https://doi.org/10.15388/infedu.2023.26
+![Gears: prior experience and grades](/icon-gears.png)
 
 ---
 
@@ -255,6 +267,14 @@ layout: two-cols
 ---
 
 # Mitä ohjelmoinnilla voi tehdä?
+
+<div style="display: flex; gap: 2rem; justify-content: center; align-items: center; margin-top: 2rem;">
+  <img src="/icon-gamepad.png" alt="Pelit" style="height: 100px;" />
+  <img src="/icon-graph.png" alt="Data-analyysi" style="height: 100px;" />
+  <img src="/icon-robot.png" alt="Robotiikka ja tekoäly" style="height: 100px;" />
+  <img src="/icon-chip.png" alt="Sulautetut järjestelmät" style="height: 100px;" />
+  <img src="/icon-torch.png" alt="Tiede ja tutkimus" style="height: 100px;" />
+</div>
 
 ---
 

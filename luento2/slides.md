@@ -38,6 +38,8 @@ Integroitu kehitysympäristö, graafinen C#-ohjelma
 
 > Poiminta esikyselystä (s2025): Suurin kirjoitettu ohjelma ennen Ohj1
 
+![Esikysely: kokemus (rivimäärä)](/esikysely-kokemus-chart.png)
+
 ---
 
 # Ohjelmointi integroidussa kehitysympäristössä
@@ -92,7 +94,23 @@ Integroitu kehitysympäristö, graafinen C#-ohjelma
 
 ---
 
-<!-- Tähän tulee kaavio: Esikyselytulokset (suurin kirjoitettu ohjelma ennen Ohj1) -->
+# Esimerkki C#-ohjelmasta
+
+```csharp
+/// <summary>
+/// Tämä on ensimmäinen ohjelmani.
+/// </summary>
+public class HelloWorld
+{
+    /// <summary>
+    /// Tulostetaan tekstiä ruudulle.
+    /// </summary>
+    public static void Main()
+    {
+        System.Console.WriteLine("Moi maailma!");
+    }
+}
+```
 
 ---
 
