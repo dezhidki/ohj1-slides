@@ -14,9 +14,7 @@
   "dependencies": {
     "@slidev/cli": "^52.15.2",
     "@slidev/theme-default": "^0.25.0",
-    "qrcode": "^1.5.4",
     "slidev-addon-polls": "github:dezhidki/slidev-addon-polls#main",
-    "slidev-theme-jyu": "github:dezhidki/jyu-slidev-theme#main",
-    "ws": "^8.20.1"
+    "slidev-theme-jyu": "github:dezhidki/jyu-slidev-theme#main"
   }
 }

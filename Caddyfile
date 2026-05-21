@@ -1,0 +1,25 @@
+:80 {
+	root * /var/www/slides
+
+	# ── Poll WebSocket — internal poll server ─────────────────────────────────
+	handle /polls* {
+		reverse_proxy localhost:3032
+	}
+
+	# ── Root → luento1 ────────────────────────────────────────────────────────
+	redir / /luento1/ temporary
+
+	# ── Per-lecture SPA fallback ───────────────────────────────────────────────
+	# Matches /luento<N>/anything — serves the file if it exists, otherwise
+	# falls back to that lecture's index.html (Vite SPA).
+	@lecture path_regexp lecture ^/(luento\d+)/(.*)$
+	handle @lecture {
+		try_files {path} /{re.lecture.1}/index.html
+		file_server
+	}
+
+	# ── Everything else (assets, vote.html, …) ────────────────────────────────
+	handle {
+		file_server
+	}
+}
