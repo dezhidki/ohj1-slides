@@ -30,7 +30,7 @@ RUN node scripts/build-all.mjs
 FROM node:22-slim AS poll-deps
 
 WORKDIR /poll-server
-COPY poll-server/package.json ./
+COPY poll-server/package.json poll-server/package-lock.json ./
 RUN npm ci --production
 
 # ──────────────────────────────────────────────────────────────────────────────
